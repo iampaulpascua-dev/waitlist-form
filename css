@@ -15,7 +15,7 @@ body {
 .waitlist-form {
   display:flex;
   align-items:center;
-  width: 560px;
+  width: 600px;
   padding: 6px;
   border-radius: 50px;
   background: linear-gradient(90deg, rgba(3,102,255,0.12), rgba(212,0,204,0.12));
