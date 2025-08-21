@@ -1,81 +1,86 @@
-/* Basic Form Container Styling */
+/* Main form container */
 .waitlist-form {
   background-color: #f8f9fa; /* Light gray background */
-  border: 1px solid #e9ecef; /* Subtle border */
-  border-radius: 12px; /* Rounded corners */
-  padding: 40px; /* Ample padding */
-  max-width: 500px; /* Limit the width for better readability */
-  margin: 50px auto; /* Center the form on the page */
-  font-family: 'Arial', sans-serif; /* A clean, universal font */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 50px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Form Headings and Paragraphs */
+/* Form heading */
 .waitlist-form h2 {
-  color: #343a40; /* Darker text for heading */
-  font-size: 2rem; /* Larger font size for prominence */
-  margin-bottom: 10px;
-  text-align: center;
+  color: #343a40;
+  margin-bottom: 25px;
+  font-size: 2rem;
 }
 
-.waitlist-form p {
-  color: #6c757d; /* Muted text for the description */
-  font-size: 1rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Input Group Styling */
+/* Input field styling */
 .form-group {
   margin-bottom: 20px;
 }
 
-/* Label Styling */
-.form-group label {
-  display: block; /* Make labels a block element */
-  margin-bottom: 8px; /* Space between label and input */
-  color: #495057; /* Slightly darker text for labels */
-  font-weight: bold; /* Make labels stand out */
-}
-
-/* Input Field Styling */
-.waitlist-form input[type="text"],
 .waitlist-form input[type="email"] {
-  width: 100%; /* Full width of the container */
-  padding: 15px; /* Comfortable padding inside the input */
-  border: 1px solid #ced4da; /* Subtle border color */
-  border-radius: 8px; /* Rounded corners for the input fields */
-  font-size: 1rem;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
-}
-
-/* Focus State for Input Fields */
-.waitlist-form input:focus {
-  border-color: #007bff; /* Blue border on focus */
-  outline: none; /* Remove the default outline */
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Glow effect on focus */
-}
-
-/* Button Styling */
-.waitlist-form button {
-  width: 100%; /* Full width button */
+  width: 100%;
   padding: 15px;
-  background-color: #007bff; /* Primary blue color */
-  color: white; /* White text */
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.waitlist-form input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styling with colors */
+.cta-button {
+  width: 100%;
+  padding: 15px;
   font-size: 1.1rem;
   font-weight: bold;
+  color: white; /* Text color */
   border: none;
-  border-radius: 8px;
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button Hover and Active States */
-.waitlist-form button:hover {
+/* Primary color scheme for the button */
+.cta-button {
+  background-color: #007bff; /* Blue */
+}
+
+.cta-button:hover {
   background-color: #0056b3; /* Darker blue on hover */
 }
 
-.waitlist-form button:active {
-  transform: translateY(1px); /* Slight 'press' effect */
+/* Alternative color schemes (uncomment the one you want) */
+/* Green button */
+/*.cta-button {
+  background-color: #28a745; 
 }
+.cta-button:hover {
+  background-color: #1e7e34;
+}*/
+
+/* Red button */
+/*.cta-button {
+  background-color: #dc3545;
+}
+.cta-button:hover {
+  background-color: #c82333;
+}*/
+
+/* Orange button */
+/*.cta-button {
+  background-color: #fd7e14;
+}
+.cta-button:hover {
+  background-color: #e66c0d;
+}*/
