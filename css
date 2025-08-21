@@ -17,7 +17,7 @@
   font-size: 2rem;
 }
 
-/* Input field styling */
+/* Input field styling with effects */
 .form-group {
   margin-bottom: 20px;
 }
@@ -29,32 +29,28 @@
   border-radius: 8px; /* Slightly more rounded corners */
   box-sizing: border-box;
   font-size: 1.1rem; /* Larger font size */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
 }
 
 .waitlist-form input[type="email"]:focus {
-  border-color: #007bff;
+  border-color: #007bff; /* Changes border color on focus */
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Adds a subtle glow effect */
 }
 
-/* Button styling with colors and improved style */
+/* Button styling with effects */
 .cta-button {
   width: 100%;
-  padding: 18px; /* Increased padding for a larger button */
-  font-size: 1.2rem; /* Larger font size */
+  padding: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: white; /* Text color */
+  color: white;
   border: none;
-  border-radius: 8px; /* Slightly more rounded corners */
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-/* Primary blue color scheme for the button */
-.cta-button {
-  background-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+  background-color: #007bff; /* Primary blue color */
 }
 
 .cta-button:hover {
