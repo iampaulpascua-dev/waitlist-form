@@ -1,54 +1,81 @@
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: Inter, system-ui, Arial, sans-serif;
-  background: #fbf9ff;
-  min-height: vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding: 40px;
-}
-
-.wrap { width:100%; max-width:720px; display:flex; flex-direction:column; align-items:center; }
-
+/* Basic Form Container Styling */
 .waitlist-form {
-  display:flex;
-  align-items:center;
-  width: 600px;
-  padding: 6px;
-  border-radius: 50px;
-  background: linear-gradient(90deg, rgba(3,102,255,0.12), rgba(212,0,204,0.12));
-  box-shadow: 0 8px 30px rgba(3,102,255,0.06), 0 6px 20px rgba(212,0,204,0.05);
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #e9ecef; /* Subtle border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 40px; /* Ample padding */
+  max-width: 500px; /* Limit the width for better readability */
+  margin: 50px auto; /* Center the form on the page */
+  font-family: 'Arial', sans-serif; /* A clean, universal font */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.waitlist-form input {
-  flex:1;
-  padding: 14px 18px;
-  font-size:16px;
-  border: none;
-  outline: none;
-  border-radius: 36px;
-  background: #fff;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02);
-  color: #222;
+/* Form Headings and Paragraphs */
+.waitlist-form h2 {
+  color: #343a40; /* Darker text for heading */
+  font-size: 2rem; /* Larger font size for prominence */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
+.waitlist-form p {
+  color: #6c757d; /* Muted text for the description */
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form-group label {
+  display: block; /* Make labels a block element */
+  margin-bottom: 8px; /* Space between label and input */
+  color: #495057; /* Slightly darker text for labels */
+  font-weight: bold; /* Make labels stand out */
+}
+
+/* Input Field Styling */
+.waitlist-form input[type="text"],
+.waitlist-form input[type="email"] {
+  width: 100%; /* Full width of the container */
+  padding: 15px; /* Comfortable padding inside the input */
+  border: 1px solid #ced4da; /* Subtle border color */
+  border-radius: 8px; /* Rounded corners for the input fields */
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus State for Input Fields */
+.waitlist-form input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Glow effect on focus */
+}
+
+/* Button Styling */
 .waitlist-form button {
-  flex: 0 0 160px;
-  margin-left: 10px;
-  padding: 10px 18px;
-  border-radius: 36px;
+  width: 100%; /* Full width button */
+  padding: 15px;
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text */
+  font-size: 1.1rem;
+  font-weight: bold;
   border: none;
-  font-weight:700;
-  font-size:14px;
-  cursor:pointer;
-  background: linear-gradient(90deg, #2f8bff, #b664ff);
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(79,102,255,0.18);
-  transition: transform .12s ease, opacity .12s ease;
+  border-radius: 8px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover and click effects */
 }
 
-.waitlist-form button:hover { transform: translateY(-1px); opacity: 0.96; }
+/* Button Hover and Active States */
+.waitlist-form button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 
-.msg { margin-top: 12px; color:#333; font-size:14px; }
+.waitlist-form button:active {
+  transform: translateY(1px); /* Slight 'press' effect */
+}
