@@ -50,37 +50,3 @@
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
-/* Primary color scheme for the button */
-.cta-button {
-  background-color: #007bff; /* Blue */
-}
-
-.cta-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Alternative color schemes (uncomment the one you want) */
-/* Green button */
-/*.cta-button {
-  background-color: #28a745; 
-}
-.cta-button:hover {
-  background-color: #1e7e34;
-}*/
-
-/* Red button */
-/*.cta-button {
-  background-color: #dc3545;
-}
-.cta-button:hover {
-  background-color: #c82333;
-}*/
-
-/* Orange button */
-/*.cta-button {
-  background-color: #fd7e14;
-}
-.cta-button:hover {
-  background-color: #e66c0d;
-}*/
