@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, Arial, sans-serif;
   background: #fbf9ff;
-  min-height: 100vh;
+  min-height: vh;
   display:flex;
   align-items:center;
   justify-content:center;
