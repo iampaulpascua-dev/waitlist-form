@@ -1,41 +1,55 @@
-/* Main form container */
-.waitlist-form {
-  background-color: #f8f9fa; /* Light gray background */
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px; /* Increased the maximum width */
+/* Container for the glassmorphic form */
+.glass-waitlist-form {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* The key to the glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter, subtle border */
+  border-radius: 16px;
+  max-width: 600px;
   margin: 50px auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: #fff; /* White text for contrast */
 }
 
-/* Form heading */
-.waitlist-form h2 {
-  color: #343a40;
+/* Heading style */
+.glass-waitlist-form h2 {
+  font-size: 2.5rem;
+  font-weight: 300; /* Lighter font weight for a clean look */
   margin-bottom: 25px;
-  font-size: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* Input field styling with effects */
+/* Input group */
 .form-group {
   margin-bottom: 20px;
 }
 
-.waitlist-form input[type="email"] {
+/* Input field styling */
+.glass-waitlist-form input[type="email"] {
   width: 100%;
-  padding: 18px; /* Slightly larger padding for a bigger input field */
-  border: 1px solid #ced4da;
-  border-radius: 8px; /* Slightly more rounded corners */
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
   box-sizing: border-box;
-  font-size: 1.1rem; /* Larger font size */
-  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+  font-size: 1.1rem;
+  color: #fff; /* White text */
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
 
-.waitlist-form input[type="email"]:focus {
-  border-color: #007bff; /* Changes border color on focus */
+/* Placeholder text color */
+.glass-waitlist-form input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.glass-waitlist-form input[type="email"]:focus {
+  background: rgba(255, 255, 255, 0.4); /* Slightly less transparent on focus */
+  border-color: rgba(255, 255, 255, 0.8);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Adds a subtle glow effect */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
 /* Button styling with effects */
@@ -44,17 +58,17 @@
   padding: 18px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: #333; /* Dark text for contrast against the light button */
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  background-color: #f1f1f1; /* Light gray button */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
-  background-color: #007bff; /* Primary blue color */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: translateY(-2px); /* Lifts the button slightly on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* A more pronounced shadow on hover */
+  background-color: #e0e0e0; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Lifts the button */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* A more pronounced shadow */
 }
